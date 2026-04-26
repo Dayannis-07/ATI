@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATI[UCV]Log 2026-1</title>
+
+    <link rel="icon" sizes="32x32" href="../icon/cropped-logonuevo-32x32.png">
+    <link rel="icon" sizes="192x192" href="../icon/cropped-logonuevo-192x192.png">
+
+    <style>
+        @import "../css/_theme.css";
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: var(--grey-50);
+        }
+        .navbar{
+            background-color: var(--main-color);
+            width: auto;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .texto-nav{
+            font-family: var(--flex-font);
+            font-weight: bold;
+            color: var(--white);
+            font-size: 50px;
+        }
+
+        #small-text{
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        #fondo-usuario{
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .busqueda{
+            display: flex;
+            gap: 0px;
+        }
+
+        #barra{
+            width: 240px;
+            height: 40px;
+            border-radius: 15px 0px 0px 15px;
+            border: none;
+            padding: 5px;
+        }
+
+        #boton{
+            width: 100px;
+            height: 40px;
+            border: none;
+            border-radius: 0px 15px 15px 0px;
+            background-color: var(--accent-color);
+            color: var(--white);
+        }
+
+        .tabla{
+            margin: auto;
+        }
+
+        #texto-tabla{
+            font-family: var(--primary-font);
+            margin-left: 260px;
+        }
+
+        .img-tabla{
+            width: 300px;
+            height: 300px;
+            border-radius: 50px 50px 0px 0px;
+            display: block;
+        }
+
+        td{
+            padding: 0px 30px 50px 30px;
+        }
+
+        .info-img{
+            font-family: var(--primary-font);
+            text-align: left;
+            padding: 15px 0px 0px 15px;
+            background-color: var(--white);
+            width: auto;
+            height: 40px;
+        }
+
+        .pie-img{
+            width: 300px;
+            height: 30px;
+            background-color: var(--main-color);
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        footer{
+            text-align: center;
+            font-family: var(--primary-font);
+            color: var(--grey-200);
+            padding: 50px 0px 50px 0px;
+            border-top: 2px solid var(--grey-200);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="texto-nav">
+                ATI<span id="small-text">[UCV]</span>Log
+            </div>
+
+            <form action="" class="busqueda">
+                <input type="search" placeholder="Nombre..." id="barra">
+                <input type="button" value="Buscar" id="boton">
+            </form>
+
+            <div id="fondo-usuario">
+                <img src="../icon/userIcon.svg" >
+            </div>
+
+        </nav>
+    </header>
+
+
+    <section>
+
+        <table class="tabla">
+            <h1 id="texto-tabla">
+                Semestre 2026-1
+            </h1>
+
+            <tr>
+                <td>
+                    <img src="../29922041/29922041.jpg" alt="" class="img-tabla">
+                    <div class="info-img">Dayannis Colmenares</div>
+                    <div class="pie-img"></div>
+                </td>
+                <td>
+                    <img src="../Dummies/Dummy1.png" alt="" class="img-tabla">
+                    <div class="info-img">Helena Torres</div>
+                    <div class="pie-img"></div>
+                </td>
+                <td>
+                    <img src="../Dummies/Dummy2.png" alt="" class="img-tabla">
+                    <div class="info-img">Carlos Blanco</div>
+                    <div class="pie-img"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../Dummies/Dummy3.png" alt="" class="img-tabla">
+                    <div class="info-img">Juan Gutierrez</div>
+                    <div class="pie-img"></div>
+                </td>
+                <td>
+                    <img src="../Dummies/Dummy4.png" alt="" class="img-tabla">
+                    <div class="info-img">Isabel Contreras</div>
+                    <div class="pie-img"></div>
+                </td>
+                <td>
+                    <img src="../Dummies/Dummy5.png" alt="" class="img-tabla">
+                    <div class="info-img">Gabriel Vargas</div>
+                    <div class="pie-img"></div>
+                </td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <footer>
+        <h3>
+            Copyright © 2026 Escuela de computación - ATI. Todos los derechos reservados
+        </h3>
+    </footer>
+
+</body>
+</html>
