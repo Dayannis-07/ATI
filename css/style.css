@@ -149,7 +149,7 @@
         }
 
         .espaciado{
-            padding: 0px 30px 50px 30px;
+            padding: 10px 30px 50px 30px;
         }
 
         .info-img{
@@ -185,3 +185,21 @@
             text-decoration: none;
             color: var(--black);
         }
+
+        .espaciado:hover{
+            animation: balanceo 2s infinite ease-in-out;
+            z-index: 10;
+        }
+
+        .espaciado:hover .pie-img{
+            background-color: var(--accent-color);
+        }
+
+/*animacion para que en index el listado se mueva de un lado a otro*/
+
+@keyframes balanceo {
+    0%{transform: scale(1.1) rotate(0deg);}
+    25%{transform: scale(1.1) rotate(3deg); /* derecha */}
+    75%{transform: scale(1.1) rotate(-3deg); /* izquierda */}
+    100%{transform: scale(1.1) rotate(0deg);}
+}
