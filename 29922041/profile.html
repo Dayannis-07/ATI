@@ -7,91 +7,40 @@
     <link rel="icon" sizes="32x32" href="../icon/cropped-logonuevo-32x32.png">
     <link rel="icon" sizes="192x192" href="../icon/cropped-logonuevo-192x192.png">
 
-    <style>
-        @import "../css/_theme.css";
+    <link rel="stylesheet" href="../css/style.css">
 
-        body{
-            font-family: var(--primary-font);
-        }
 
-        h1{
-            color: var(--main-color);
-        }
-
-        #imagen-perfil{
-            width: 370px;
-            height: 500px;
-            border-radius: 0px 0px 60px 0px;
-        }
-
-        #contenedor-foto{
-            width: 378px;
-            height: 500px;
-            background-color: var(--main-color);
-        }
-
-        #contenido-perfil{
-            padding: 20px;
-            width: 800px;
-        }
-
-        #texto-perfil{
-            font-style: oblique;
-            font-family: var(--condensed-font);
-            font-size: 18px;
-        }
-
-        .items-q{
-            font-size: 18px;
-            padding-bottom: 10px;
-        }
-
-        .items-a{
-            font-size: 18px;
-            padding-left: 15px;
-            padding-bottom: 10px;
-        }
-
-        #negrita{
-            font-weight: bolder;
-        }
-
-        #texto-correo{
-            font-size: 18px;
-        }
-
-        p a{
-            color: var(--main-color);
-            font-weight: bold;
-        }
-
-        a:active{
-            color: var(--accent-color);
-        }
-
-        #contenedor{
-            border-collapse: collapse; 
-            margin: 50px 0px 0px 150px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        }
-    </style>
 
 </head>
 <body>
     <header>
-        <!--Vacio por ahora-->
+        <nav class="navbar">
+            <div class="texto-nav">
+                ATI<span id="small-text">[UCV]</span>Log
+            </div>
+
+            <form action="" class="busqueda">
+                <input type="search" placeholder="Nombre..." id="barra">
+                <input type="button" value="Buscar" id="boton">
+            </form>
+
+            <div id="fondo-usuario">
+                <img src="../icon/userIcon.svg" >
+            </div>
+
+        </nav>
     </header>
 
     <section>
         
         <table id="contenedor">
-            <td>
+            <td id="quitar-espacio">
                 <div id="contenedor-foto">
-                    <img src="./29922041.png" id="imagen-perfil">
+                    <img src="./29922041.jpg" id="imagen-perfil">
                 </div>
             </td>
             <td id="contenido-perfil">
-                <h1>Dayannis colmenares</h1>
+                <h1 id="titulo">Dayannis colmenares</h1>
 
                 <p id="texto-perfil">
                     Soy estudiante de Computación en la Universidad Central de Venezuela (UCV), actualmente
@@ -141,9 +90,11 @@
 
     </section>
 
-    
+
     <footer>
-        <!--Vacio por ahora-->
+        <h3>
+            Copyright © 2026 Escuela de computación - ATI. Todos los derechos reservados
+        </h3>
     </footer>
 
 
