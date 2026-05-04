@@ -4,16 +4,26 @@
 
         body{
             font-family: var(--primary-font);
+            margin: 0%;
+            padding: 0%;
+            background-color: var(--grey-50);
         }
 
         #titulo{
             color: var(--main-color);
+            font-size: 2rem;
         }
 
         #imagen-perfil{
             width: 370px;
             height: 500px;
             border-radius: 0px 0px 60px 0px;
+        }
+
+        #imagen-perfil-small{
+            visibility: hidden;
+            width: 0%;
+            height: 0%;
         }
 
         #contenedor-foto{
@@ -23,23 +33,25 @@
         }
 
         #contenido-perfil{
-            padding: 20px;
-            width: 800px;
+            padding: 20px 20px 20px 30px;
+            flex: 1;
+            min-width: 300px;
         }
 
         #texto-perfil{
             font-style: oblique;
             font-family: var(--condensed-font);
-            font-size: 18px;
+            font-size: 1.2rem;
+            padding: 0px 0px 20px 0px;
         }
 
         .items-q{
-            font-size: 18px;
+            font-size: 1.2rem;
             padding-bottom: 10px;
         }
 
         .items-a{
-            font-size: 18px;
+            font-size: 1.2rem;
             padding-left: 15px;
             padding-bottom: 10px;
         }
@@ -49,7 +61,8 @@
         }
 
         #texto-correo{
-            font-size: 18px;
+            font-size: 1.2rem;
+            text-align: justify;
         }
 
         p a{
@@ -63,40 +76,33 @@
 
         #contenedor{
             border-collapse: collapse;
-            margin: 50px 0px 50px 150px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        #quitar-espacio{
-            padding: 0;
-        }
 
 /*index*/
 
-        body{
-            margin: 0;
-            padding: 0;
-            background-color: var(--grey-50);
-        }
         .navbar{
             background-color: var(--main-color);
-            width: auto;
             height: 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 20px;
+            margin: none;
         }
 
         .texto-nav{
             font-family: var(--flex-font);
             font-weight: bold;
             color: var(--white);
-            font-size: 50px;
+            font-size: 3rem;
         }
 
         #small-text{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: lighter;
         }
 
@@ -108,6 +114,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        #menu-hamburguesa{
+            visibility: hidden;
+            width: 0%;
+            height: 0%;
         }
 
         .busqueda{
@@ -133,23 +145,28 @@
         }
 
         .tabla{
-            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px 50px;
+            padding-left: 4%;
         }
 
         #texto-tabla{
             font-family: var(--primary-font);
-            margin-left: 260px;
+            margin-left: 80px;
+            font-size: 2rem;
         }
 
         .img-tabla{
             width: 300px;
             height: 300px;
             border-radius: 50px 50px 0px 0px;
-            display: block;
+            display: flex;
+            flex-direction: column;
         }
 
         .espaciado{
-            padding: 10px 30px 50px 30px;
+            padding: 10px;
         }
 
         .info-img{
@@ -157,8 +174,9 @@
             text-align: left;
             padding: 15px 0px 0px 15px;
             background-color: var(--white);
-            width: auto;
+            width: 285px;
             height: 40px;
+            font-size: 1.2rem;
         }
 
         .pie-img{
@@ -172,8 +190,11 @@
             text-align: center;
             font-family: var(--primary-font);
             color: var(--grey-200);
-            padding: 50px 0px 50px 0px;
+            padding: 30px 0px 35px 0px;
             border-top: 2px solid var(--grey-200);
+            margin: 20px 0px 0px 0px;
+            width: 100%;
+            font-size: 1rem;
         }
 
         .enlace{
@@ -202,4 +223,329 @@
     25%{transform: scale(1.1) rotate(3deg); /* derecha */}
     75%{transform: scale(1.1) rotate(-3deg); /* izquierda */}
     100%{transform: scale(1.1) rotate(0deg);}
+}
+
+/*Media query*/
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .busqueda {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #fondo-usuario {
+        visibility: hidden;
+    }
+
+    .texto-nav {
+        font-size: 2.5rem;
+    }
+
+    #small-text {
+        font-size: 1.25rem;
+    }
+
+    #menu-hamburguesa {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 80%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 2%;
+    }
+
+    #texto-tabla {
+        margin-left: 10%;
+    }
+
+    #contenedor-foto {
+        width: 100%;
+        height: 5%;
+    }
+
+    #imagen-perfil {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        position: absolute;
+    }
+
+    #contenido-perfil {
+        padding: 2%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    #imagen-perfil-small{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 60px 0px;
+    }
+
+}
+
+/*lo hice de esta manera porque necesito qeu los tamaños sean diferentes y para que no
+se solapen y me cambien la estructura tuve que poner estas condiciones*/
+@media (min-width: 480px) and (max-width: 480px) {
+    .busqueda {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #fondo-usuario {
+        visibility: hidden;
+    }
+
+    .texto-nav {
+        font-size: 2.5rem;
+    }
+
+    #small-text {
+        font-size: 1.25rem;
+    }
+
+    #menu-hamburguesa {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 65%;
+    }
+
+    .navbar {
+        width: 70%;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 5%;
+    }
+
+    #texto-tabla {
+        margin-left: 10%;
+    }
+
+    #contenedor{
+        width: 78%;
+    }
+
+    #contenedor-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    #imagen-perfil {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        position: absolute;
+    }
+
+    #contenido-perfil {
+        padding: 2%;
+    }
+
+    footer {
+        width: 78%;
+    }
+
+    #imagen-perfil-small{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 60px 0px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .busqueda {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #fondo-usuario {
+        visibility: hidden;
+    }
+
+    #menu-hamburguesa {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 90%;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 15%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    #contenedor-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    #imagen-perfil {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        position: absolute;
+    }
+
+    #contenido-perfil {
+        padding: 2%;
+    }
+
+    #imagen-perfil-small{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 60px 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+
+    .busqueda {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #fondo-usuario {
+        visibility: hidden;
+    }
+
+    #menu-hamburguesa {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 90%;
+    }
+
+    .navbar {
+        width: 95%;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: left;
+        padding: 0% 0% 0% 5%;
+        gap: 0%;
+    }
+
+    #texto-tabla {
+        margin-left: 5%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    #contenedor-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    #imagen-perfil {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        position: absolute;
+    }
+
+    #contenido-perfil {
+        padding: 2%;
+    }
+
+    #imagen-perfil-small{
+        visibility: visible;
+        width: 100%;
+        height: auto;
+        border-radius: 0px 0px 60px 0px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .busqueda {
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+    }
+
+    #fondo-usuario {
+        visibility: hidden;
+    }
+
+    #menu-hamburguesa {
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 90%;
+    }
+
+    .navbar {
+        width: 97%;
+    }
+
+    .tabla {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: left;
+        padding: 0% 0% 0% 5%;
+        gap: 0%;
+    }
+
+    #texto-tabla {
+        margin-left: 5%;
+    }
+
+    #contenedor{
+        width: 100%;
+    }
+
+    #contenedor-foto {
+        width: 100%;
+        height: auto;
+    }
+
+    #imagen-perfil {
+        width: 100%;
+        height: auto;
+    }
+
+    #contenido-perfil {
+        padding: 2%;
+    }
 }
