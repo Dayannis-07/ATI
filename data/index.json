@@ -1,7 +1,7 @@
 const profiles = [
     {
         "ci": "29922041",
-        "image_ext": ".jpg",
+        "image_ext": ".png",
         "name": "Dayannis Colmenares"
     },
     {
