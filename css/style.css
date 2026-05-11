@@ -216,6 +216,13 @@
             background-color: var(--accent-color);
         }
 
+        #no-esta{
+            font-family: var(--primary-font);
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
 /*animacion para que en index el listado se mueva de un lado a otro*/
 
 @keyframes balanceo {

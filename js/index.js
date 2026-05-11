@@ -2,12 +2,12 @@ function cargarIdioma(lang, callback) {
     const script = document.createElement('script');
     const langFile = `./conf/config${lang.toUpperCase()}.json`;
     script.src = langFile;
-    
+
     script.onload = () => {
         //console.log(`Idioma ${lang} cargado`);
         callback();
     };
-    
+
     document.head.appendChild(script);
 }
 
@@ -29,6 +29,44 @@ function index() {
         botonBusqueda.value = config.search;
     }
 
+    function realizarBusqueda() {
+        const termino = barraBusqueda.value.trim();
+        const terminoLower = termino.toLowerCase();
+        const tarjetas = contenedor.querySelectorAll('.espaciado');
+        const mensajeError = document.getElementById('no-esta');
+
+        let hayCoincidencias = false;
+
+        tarjetas.forEach(tarjeta => {
+            const nombre = tarjeta.querySelector('.info-img span').innerText.toLowerCase();
+
+            if (nombre.includes(terminoLower)) {
+                tarjeta.style.display = 'block';
+                hayCoincidencias = true;
+            } else {
+                tarjeta.style.display = 'none';
+            }
+        });
+
+        if (hayCoincidencias) {
+            mensajeError.innerHTML = "";
+        } else {
+            const queryNegrita = `<b>${termino}</b>`;
+            let textoFinal = config.mensaje.replace('[query]', queryNegrita);
+
+            mensajeError.innerHTML = textoFinal;
+        }
+    }
+
+    botonBusqueda.addEventListener('click', realizarBusqueda);
+
+    barraBusqueda.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            realizarBusqueda();
+        }
+    });
+
     const contenedor = document.getElementById('contenedor-tabla');
     contenedor.innerHTML = '';
 
@@ -45,10 +83,20 @@ function index() {
         contenedor.innerHTML += htmlPerfil;
     });
 
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+
+    if (query) {
+        const barra = document.getElementById('barra');
+        barra.value = query;
+
+        realizarBusqueda();
+    }
+
     // event listener
-    contenedor.addEventListener('click', function(event) {
+    contenedor.addEventListener('click', function (event) {
         const tarjeta = event.target.closest('.enlace');
-        
+
         if (tarjeta) {
             event.preventDefault();
             // obtenemos ci

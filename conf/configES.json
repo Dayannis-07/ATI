@@ -4,7 +4,7 @@ const config = {
 	"home": "Inicio",
 	"login": "Entrar",
 	"copyRight":"Copyright © 2026 Escuela de computación - ATI. Todos los derechos reservados",
-	"name":"Nombre",
+	"name":"Nombre...",
 	"description":"",
 	"color":"Mi color favorito es",
 	"book":["Mi libro favorito es", "Mis libros favoritos son"],
@@ -13,5 +13,6 @@ const config = {
 	"language":"Lenguajes de programación aprendidos",
 	"email":"Si necesitan comunicarse conmigo me pueden escribir a [email]",
 	"search": "Buscar",
-	"profile": "Mi perfil"
+	"profile": "Mi perfil",
+	"mensaje": "No hay perfiles que tengan en su nombre: [query]"
 }

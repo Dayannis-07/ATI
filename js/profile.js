@@ -52,6 +52,24 @@ function rellenarDatos() {
         botonBusqueda.value = config.search;
     }
 
+    function redirigirABusqueda() {
+        const termino = barraBusqueda.value.trim();
+        if (termino !== "") {
+            const params = new URLSearchParams(window.location.search);
+            const lang = params.get('lang') || 'es';
+
+            window.location.href = `./index.html?lang=${lang}&q=${encodeURIComponent(termino)}`;
+        }
+    }
+
+    botonBusqueda.addEventListener('click', redirigirABusqueda);
+
+    barraBusqueda.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            redirigirABusqueda();
+        }
+    });
 
     if (typeof profile !== 'undefined') {
         document.getElementById('titulo').innerText = profile.name;
