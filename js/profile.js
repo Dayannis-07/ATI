@@ -1,9 +1,21 @@
+function cargarIdioma(lang, callback) {
+    const script = document.createElement('script');
+    const langFile = `./conf/config${lang.toUpperCase()}.json`;
+    script.src = langFile;
+
+    script.onload = () => {
+        console.log(`Idioma ${lang} cargado`);
+        callback();
+    };
+    document.head.appendChild(script);
+}
+
 function scriptCI(ci, callback) {
     const script = document.createElement('script');
     script.src = `../${ci}/profile.json`;
-    
+
     script.onload = callback;
-    
+
     document.head.appendChild(script);
 }
 
@@ -16,17 +28,43 @@ function validarEtiqueta(configArray, profileData) {
 }
 
 function rellenarDatos() {
-    
+
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get('lang') || 'es';
+
+    const linkHome = document.getElementById('link-index');
+    if (linkHome) {
+        linkHome.href = `./index.html?lang=${lang}`;
+    }
+
     document.getElementById('copyRight').innerText = config.copyRight;
     document.getElementById('site-1').innerText = config.site[0];
     document.getElementById('site-2').innerText = config.site[1];
     document.getElementById('site-3').innerText = config.site[2];
-    
+
+    const barraBusqueda = document.getElementById('barra');
+    if (barraBusqueda) {
+        barraBusqueda.placeholder = config.name;
+    }
+
+    const botonBusqueda = document.getElementById('boton');
+    if (botonBusqueda) {
+        botonBusqueda.value = config.search;
+    }
+
 
     if (typeof profile !== 'undefined') {
         document.getElementById('titulo').innerText = profile.name;
         document.getElementById('texto-perfil').innerText = profile.description;
-        document.getElementById('texto-email').innerText = profile.email;
+
+        const fraseCompleta = config.email;
+        const partes = fraseCompleta.split('[email]');
+        const pCorreo = document.getElementById('texto-correo');
+        const aCorreo = pCorreo.querySelector('a');
+        const spanEmail = document.getElementById('texto-email');
+        pCorreo.firstChild.textContent = partes[0];
+        spanEmail.innerText = profile.email;
+        aCorreo.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`;
 
         // perfil segun ci
         document.getElementById('imagen-perfil').src = `../${profile.ci}/${profile.ci}Big.jpg`;
@@ -68,10 +106,18 @@ function rellenarDatos() {
 window.onload = () => {
     const params = new URLSearchParams(window.location.search);
     const personCI = params.get('ci');
+    let lang = params.get('lang') || 'es'; // Si no hay lang, usa 'es'
 
-    if (personCI) {
-        scriptCI(personCI, rellenarDatos);
-    } else {
-        document.getElementById('titulo').innerText = "CI no especificada";
-    }
+    // Primero cargamos el idioma, luego los datos de la persona
+    cargarIdioma(lang, () => {
+        if (personCI) {
+            scriptCI(personCI, rellenarDatos);
+        } else {
+            // Incluso si no hay CI, rellenamos lo que dependa del idioma (nav, footer)
+            rellenarDatos();
+            if (document.getElementById('titulo')) {
+                document.getElementById('titulo').innerText = "CI no especificada";
+            }
+        }
+    });
 };
