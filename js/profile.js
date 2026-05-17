@@ -41,6 +41,7 @@ function rellenarDatos() {
     document.getElementById('site-1').innerText = config.site[0];
     document.getElementById('site-2').innerText = config.site[1];
     document.getElementById('site-3').innerText = config.site[2];
+    document.getElementById('texto-mi-perfil').innerText = config.profile;
 
     const barraBusqueda = document.getElementById('barra');
     if (barraBusqueda) {
@@ -86,7 +87,8 @@ function rellenarDatos() {
 
         // perfil segun ci
         document.getElementById('imagen-perfil').src = `../${profile.ci}/${profile.ci}Big.jpg`;
-        document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small.png`;
+        //document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small.png`;
+        document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small.jpg`;
 
         const questions = document.querySelectorAll('.items-q');
         const answers = document.querySelectorAll('.items-a');
@@ -116,6 +118,15 @@ function rellenarDatos() {
                 questions[index].innerText = item.q;
                 answers[index].innerText = item.a;
             }
+        });
+    }
+
+    const menuHamburguesa = document.getElementById('menu-hamburguesa');
+    const navbar = document.querySelector('.navbar');
+
+    if (menuHamburguesa) {
+        menuHamburguesa.addEventListener('click', () => {
+            navbar.classList.toggle('nav-active');
         });
     }
 }

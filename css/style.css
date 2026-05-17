@@ -2,256 +2,277 @@
 
 @import "../css/_theme.css";
 
-        body{
-            font-family: var(--primary-font);
-            margin: 0%;
-            padding: 0%;
-            background-color: var(--grey-50);
-        }
+body {
+    font-family: var(--primary-font);
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--grey-50);
+}
 
-        #titulo{
-            color: var(--main-color);
-            font-size: 2rem;
-        }
+#titulo {
+    color: var(--main-color);
+    font-size: 2rem;
+}
 
-        #imagen-perfil{
-            width: 370px;
-            height: 500px;
-            border-radius: 0px 0px 60px 0px;
-        }
+#imagen-perfil {
+    width: 370px;
+    height: 500px;
+    border-radius: 0px 0px 60px 0px;
+}
 
-        #imagen-perfil-small{
-            visibility: hidden;
-            width: 0%;
-            height: 0%;
-        }
+#imagen-perfil-small {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+}
 
-        #contenedor-foto{
-            width: 378px;
-            height: 500px;
-            background-color: var(--main-color);
-        }
+#contenedor-foto {
+    width: 378px;
+    height: 500px;
+    background-color: var(--main-color);
+}
 
-        #contenido-perfil{
-            padding: 20px 20px 20px 30px;
-            flex: 1;
-            min-width: 300px;
-        }
+#contenido-perfil {
+    padding: 20px 20px 20px 30px;
+    flex: 1;
+    min-width: 300px;
+}
 
-        #texto-perfil{
-            font-style: oblique;
-            font-family: var(--condensed-font);
-            font-size: 1.2rem;
-            padding: 0px 0px 20px 0px;
-        }
+#texto-perfil {
+    font-style: oblique;
+    font-family: var(--condensed-font);
+    font-size: 1.2rem;
+    padding: 0px 0px 20px 0px;
+}
 
-        .items-q{
-            font-size: 1.2rem;
-            padding-bottom: 10px;
-        }
+.items-q {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
 
-        .items-a{
-            font-size: 1.2rem;
-            padding-left: 15px;
-            padding-bottom: 10px;
-        }
+.items-a {
+    font-size: 1.2rem;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
 
-        #negrita{
-            font-weight: bolder;
-        }
+#negrita {
+    font-weight: bolder;
+}
 
-        #texto-correo{
-            font-size: 1.2rem;
-            text-align: justify;
-        }
+#texto-correo {
+    font-size: 1.2rem;
+    text-align: justify;
+}
 
-        p a{
-            color: var(--main-color);
-            font-weight: bold;
-        }
+p a {
+    color: var(--main-color);
+    font-weight: bold;
+}
 
-        a:active{
-            color: var(--accent-color);
-        }
+a:active {
+    color: var(--accent-color);
+}
 
-        #contenedor{
-            border-collapse: collapse;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-wrap: wrap;
-        }
+#contenedor {
+    border-collapse: collapse;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 /*index*/
 
-        .navbar{
-            background-color: var(--main-color);
-            height: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            margin: none;
-        }
+.navbar {
+    background-color: var(--main-color);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: none;
+}
 
-        .texto-nav{
-            font-family: var(--flex-font);
-            font-weight: bold;
-            color: var(--white);
-            font-size: 3rem;
-        }
+.texto-nav {
+    font-family: var(--flex-font);
+    font-weight: bold;
+    color: var(--white);
+    font-size: 3rem;
+}
 
-        #small-text{
-            font-size: 1.8rem;
-            font-weight: lighter;
-        }
+#small-text {
+    font-size: 1.8rem;
+    font-weight: lighter;
+}
 
-        #fondo-usuario{
-            width: 50px;
-            height: 50px;
-            background-color: var(--accent-color);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+#fondo-usuario {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        #menu-hamburguesa{
-            visibility: hidden;
-            width: 0%;
-            height: 0%;
-        }
+#menu-hamburguesa {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+}
 
-        .busqueda{
-            display: flex;
-            gap: 0px;
-        }
+.busqueda {
+    display: flex;
+    gap: 0px;
+}
 
-        #barra{
-            width: 240px;
-            height: 40px;
-            border-radius: 15px 0px 0px 15px;
-            border: none;
-            padding: 5px;
-        }
+#barra {
+    width: 240px;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+    padding: 5px;
+}
 
-        #boton{
-            width: 100px;
-            height: 40px;
-            border: none;
-            border-radius: 0px 15px 15px 0px;
-            background-color: var(--accent-color);
-            color: var(--white);
-        }
+#boton {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: var(--accent-color);
+    color: var(--white);
+}
 
-        .tabla{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 50px 50px;
-            padding-left: 4%;
-        }
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding-left: 4%;
+}
 
-        #texto-tabla{
-            font-family: var(--primary-font);
-            margin-left: 80px;
-            font-size: 2rem;
-        }
+#texto-tabla {
+    font-family: var(--primary-font);
+    margin-left: 80px;
+    font-size: 2rem;
+}
 
-        .img-tabla{
-            width: 300px;
-            height: 300px;
-            border-radius: 50px 50px 0px 0px;
-            display: flex;
-            flex-direction: column;
-        }
+.img-tabla {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px 50px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .espaciado{
-            padding: 10px;
-        }
+.espaciado {
+    padding: 10px;
+}
 
-        .info-img{
-            font-family: var(--primary-font);
-            text-align: left;
-            padding: 15px 0px 0px 15px;
-            background-color: var(--white);
-            width: 285px;
-            height: 40px;
-            font-size: 1.2rem;
-        }
+.info-img {
+    font-family: var(--primary-font);
+    text-align: left;
+    padding: 15px 0px 0px 15px;
+    background-color: var(--white);
+    width: 285px;
+    height: 40px;
+    font-size: 1.2rem;
+}
 
-        .pie-img{
-            width: 300px;
-            height: 30px;
-            background-color: var(--main-color);
-            border-radius: 0px 0px 50px 50px;
-        }
+.pie-img {
+    width: 300px;
+    height: 30px;
+    background-color: var(--main-color);
+    border-radius: 0px 0px 50px 50px;
+}
 
-        footer{
-            text-align: center;
-            font-family: var(--primary-font);
-            color: var(--grey-200);
-            padding: 30px 0px 35px 0px;
-            border-top: 2px solid var(--grey-200);
-            margin: 20px 0px 0px 0px;
-            width: 100%;
-            font-size: 1rem;
-        }
+footer {
+    text-align: center;
+    font-family: var(--primary-font);
+    color: var(--grey-200);
+    padding: 30px 0px 35px 0px;
+    border-top: 2px solid var(--grey-200);
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    font-size: 1rem;
+}
 
-        .enlace{
-            text-decoration: none;
-            color: var(--black);
-        }
+.enlace {
+    text-decoration: none;
+    color: var(--black);
+}
 
-        .enlace:active{
-            text-decoration: none;
-            color: var(--black);
-        }
+.enlace:active {
+    text-decoration: none;
+    color: var(--black);
+}
 
-        .espaciado:hover{
-            animation: balanceo 2s infinite ease-in-out;
-            z-index: 10;
-        }
+.espaciado:hover {
+    animation: balanceo 2s infinite ease-in-out;
+    z-index: 10;
+}
 
-        .espaciado:hover .pie-img{
-            background-color: var(--accent-color);
-        }
+.espaciado:hover .pie-img {
+    background-color: var(--accent-color);
+}
 
-        #no-esta{
-            font-family: var(--primary-font);
-            color: var(--accent-color);
-            font-size: 1.2rem;
-            text-align: center;
-        }
+#no-esta {
+    font-family: var(--primary-font);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#texto-mi-perfil {
+    visibility: hidden;
+    width: 0%;
+    height: 0%;
+}
 
 /*animacion para que en index el listado se mueva de un lado a otro*/
 
 @keyframes balanceo {
-    0%{transform: scale(1.1) rotate(0deg);}
-    25%{transform: scale(1.1) rotate(3deg); /* derecha */}
-    75%{transform: scale(1.1) rotate(-3deg); /* izquierda */}
-    100%{transform: scale(1.1) rotate(0deg);}
+    0% {
+        transform: scale(1.1) rotate(0deg);
+    }
+
+    25% {
+        transform: scale(1.1) rotate(3deg);
+        /* derecha */
+    }
+
+    75% {
+        transform: scale(1.1) rotate(-3deg);
+        /* izquierda */
+    }
+
+    100% {
+        transform: scale(1.1) rotate(0deg);
+    }
 }
 
 /*Media query*/
 
 
 @media (min-width: 320px) and (max-width: 479px) {
-    .busqueda {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .busqueda,
+    #mi-perfil,
+    #texto-mi-perfil {
+        display: none !important;
     }
 
     #fondo-usuario {
-        visibility: hidden;
-    }
-
-    .texto-nav {
-        font-size: 2.5rem;
-    }
-
-    #small-text {
-        font-size: 1.25rem;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        width: 100%;
     }
 
     #menu-hamburguesa {
@@ -259,11 +280,50 @@
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 80%;
+        top: 15px;
+        right: 5%;
+        left: auto;
     }
 
-    .navbar {
+    .navbar.nav-active .busqueda {
+        display: flex !important;
+        position: static;
+        width: 90%;
+        background-color: var(--main-color);
+        padding: 20px 0px 10px 0px;
+    }
+
+    .navbar.nav-active #texto-mi-perfil {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        top: 15.5%;
         width: 100%;
+        text-align: right;
+        padding-right: 60%;
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: 1.25rem;
+    }
+
+    .navbar.nav-active #mi-perfil {
+        display: block !important;
+        position: static;
+        margin: 10px 40px 10px auto;
+        width: 50px;
+        height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+    }
+
+
+
+    .texto-nav {
+        font-size: 2.5rem;
+    }
+
+    #small-text {
+        font-size: 1.25rem;
     }
 
     .tabla {
@@ -276,9 +336,11 @@
         margin-left: 10%;
     }
 
-    #contenedor-foto {
+    #imagen-perfil-small {
+        visibility: visible;
         width: 100%;
-        height: 5%;
+        height: auto;
+        border-radius: 0px 0px 60px 0px;
     }
 
     #imagen-perfil {
@@ -288,6 +350,11 @@
         position: absolute;
     }
 
+    #contenedor-foto {
+        width: 100%;
+        height: 5%;
+    }
+
     #contenido-perfil {
         padding: 2%;
     }
@@ -295,35 +362,30 @@
     footer {
         width: 100%;
     }
-
-    #imagen-perfil-small{
-        visibility: visible;
-        width: 100%;
-        height: auto;
-        border-radius: 0px 0px 60px 0px;
-    }
-
 }
 
 /*lo hice de esta manera porque necesito qeu los tamaños sean diferentes y para que no
 se solapen y me cambien la estructura tuve que poner estas condiciones*/
 @media (min-width: 480px) and (max-width: 480px) {
-    .busqueda {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .busqueda,
+    #mi-perfil,
+    #texto-mi-perfil {
+        display: none !important;
     }
 
     #fondo-usuario {
-        visibility: hidden;
-    }
-
-    .texto-nav {
-        font-size: 2.5rem;
-    }
-
-    #small-text {
-        font-size: 1.25rem;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        width: 100%;
     }
 
     #menu-hamburguesa {
@@ -331,12 +393,46 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 65%;
+        top: 15px;
+        right: 5%;
+        left: auto;
     }
 
-    .navbar {
-        width: 70%;
+    .navbar.nav-active .busqueda {
+        display: flex !important;
+        position: static;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 20px 0px 10px 100px;
     }
+
+    .navbar.nav-active #texto-mi-perfil {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        top: 16%;
+        width: 100%;
+        text-align: right;
+        padding-right: 45%;
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: 1.25rem;
+    }
+
+    .navbar.nav-active #mi-perfil {
+        display: block !important;
+        position: static;
+        margin: 10px 40px 10px auto;
+        width: 50px;
+        height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
+    }
+
+    #small-text {
+        font-size: 1.25rem;
+    }
+
 
     .tabla {
         display: grid;
@@ -348,8 +444,8 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         margin-left: 10%;
     }
 
-    #contenedor{
-        width: 78%;
+    #contenedor {
+        width: 100%;
     }
 
     #contenedor-foto {
@@ -372,7 +468,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         width: 78%;
     }
 
-    #imagen-perfil-small{
+    #imagen-perfil-small {
         visibility: visible;
         width: 100%;
         height: auto;
@@ -381,14 +477,24 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
-    .busqueda {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .busqueda,
+    #mi-perfil,
+    #texto-mi-perfil {
+        display: none !important;
     }
 
     #fondo-usuario {
-        visibility: hidden;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        width: 100%;
     }
 
     #menu-hamburguesa {
@@ -396,11 +502,40 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 90%;
+        top: 15px;
+        right: 5%;
+        left: auto;
     }
 
-    .navbar {
+    .navbar.nav-active .busqueda {
+        display: flex !important;
+        position: static;
         width: 100%;
+        background-color: var(--main-color);
+        padding: 20px 0px 10px 100px;
+    }
+
+    .navbar.nav-active #texto-mi-perfil {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        top: 16%;
+        width: 100%;
+        text-align: right;
+        padding-right: 45%;
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: 1.25rem;
+    }
+
+    .navbar.nav-active #mi-perfil {
+        display: block !important;
+        position: static;
+        margin: 10px 40px 10px auto;
+        width: 50px;
+        height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
     }
 
     .tabla {
@@ -409,7 +544,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding-left: 15%;
     }
 
-    #contenedor{
+    #contenedor {
         width: 100%;
     }
 
@@ -429,7 +564,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 2%;
     }
 
-    #imagen-perfil-small{
+    #imagen-perfil-small {
         visibility: visible;
         width: 100%;
         height: auto;
@@ -439,14 +574,24 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
 
 @media (min-width: 768px) and (max-width: 768px) {
 
-    .busqueda {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .busqueda,
+    #mi-perfil,
+    #texto-mi-perfil {
+        display: none !important;
     }
 
     #fondo-usuario {
-        visibility: hidden;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        width: 100%;
     }
 
     #menu-hamburguesa {
@@ -454,11 +599,40 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 90%;
+        top: 15px;
+        right: 5%;
+        left: auto;
     }
 
-    .navbar {
-        width: 95%;
+    .navbar.nav-active .busqueda {
+        display: flex !important;
+        position: static;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 20px 0px 10px 50%;
+    }
+
+    .navbar.nav-active #texto-mi-perfil {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        top: 16.5%;
+        width: 100%;
+        text-align: right;
+        padding-right: 27%;
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: 1.25rem;
+    }
+
+    .navbar.nav-active #mi-perfil {
+        display: block !important;
+        position: static;
+        margin: 10px 40px 10px auto;
+        width: 50px;
+        height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
     }
 
     .tabla {
@@ -473,7 +647,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         margin-left: 5%;
     }
 
-    #contenedor{
+    #contenedor {
         width: 100%;
     }
 
@@ -493,7 +667,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 2%;
     }
 
-    #imagen-perfil-small{
+    #imagen-perfil-small {
         visibility: visible;
         width: 100%;
         height: auto;
@@ -504,14 +678,24 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    .busqueda {
-        visibility: hidden;
-        width: 0%;
-        height: 0%;
+    .navbar {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .busqueda,
+    #mi-perfil,
+    #texto-mi-perfil {
+        display: none !important;
     }
 
     #fondo-usuario {
-        visibility: hidden;
+        visibility: visible !important;
+        display: flex !important;
+        background-color: transparent;
+        width: 100%;
     }
 
     #menu-hamburguesa {
@@ -519,11 +703,40 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         width: 50px;
         height: 50px;
         position: absolute;
-        left: 90%;
+        top: 15px;
+        right: 5%;
+        left: auto;
     }
 
-    .navbar {
-        width: 97%;
+    .navbar.nav-active .busqueda {
+        display: flex !important;
+        position: static;
+        width: 100%;
+        background-color: var(--main-color);
+        padding: 20px 0px 10px 50%;
+    }
+
+    .navbar.nav-active #texto-mi-perfil {
+        display: block !important;
+        visibility: visible;
+        position: absolute;
+        top: 16.5%;
+        width: 100%;
+        text-align: right;
+        padding-right: 27%;
+        color: var(--white);
+        font-family: var(--primary-font);
+        font-size: 1.25rem;
+    }
+
+    .navbar.nav-active #mi-perfil {
+        display: block !important;
+        position: static;
+        margin: 10px 40px 10px auto;
+        width: 50px;
+        height: 50px;
+        background-color: var(--accent-color);
+        border-radius: 50%;
     }
 
     .tabla {
@@ -538,7 +751,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         margin-left: 5%;
     }
 
-    #contenedor{
+    #contenedor {
         width: 100%;
     }
 

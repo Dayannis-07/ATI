@@ -18,6 +18,7 @@ function index() {
     document.getElementById('site-1').innerText = config.site[0];
     document.getElementById('site-2').innerText = config.site[1];
     document.getElementById('site-3').innerText = config.site[2];
+    document.getElementById('texto-mi-perfil').innerText = config.profile;
 
     const barraBusqueda = document.getElementById('barra');
     if (barraBusqueda) {
@@ -107,6 +108,16 @@ function index() {
             window.location.href = `./profile.html?ci=${ci}&lang=${langActual}`;
         }
     });
+
+    const menuHamburguesa = document.getElementById('menu-hamburguesa');
+    const navbar = document.querySelector('.navbar');
+
+    if (menuHamburguesa) {
+        menuHamburguesa.addEventListener('click', () => {
+            navbar.classList.toggle('nav-active');
+        });
+    }
+
 }
 
 window.onload = () => {
