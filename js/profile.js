@@ -86,9 +86,8 @@ function rellenarDatos() {
         aCorreo.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}`;
 
         // perfil segun ci
-        document.getElementById('imagen-perfil').src = `../${profile.ci}/${profile.ci}Big.jpg`;
-        //document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small.png`;
-        document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small.jpg`;
+        document.getElementById('imagen-perfil').src = `../${profile.ci}/${profile.ci}Big${profile.image_ext}`;
+        document.getElementById('imagen-perfil-small').src = `../${profile.ci}/${profile.ci}Small${profile.image_ext}`;
 
         const questions = document.querySelectorAll('.items-q');
         const answers = document.querySelectorAll('.items-a');

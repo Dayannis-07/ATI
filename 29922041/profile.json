@@ -10,5 +10,5 @@ const profile = {
 	"ci":"29922041",
 	"gender": "femenino",
 	"birth_date":"07/11/2003",
-	"image_ext": [".jpg", ".png"]
+	"image_ext": ".jpg"
 }
