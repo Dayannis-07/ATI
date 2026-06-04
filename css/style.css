@@ -285,7 +285,7 @@ footer {
         left: auto;
     }
 
-    .navbar.nav-active .busqueda {
+    .nav-active .busqueda {
         display: flex !important;
         position: static;
         width: 90%;
@@ -293,7 +293,7 @@ footer {
         padding: 20px 0px 10px 0px;
     }
 
-    .navbar.nav-active #texto-mi-perfil {
+    .nav-active #texto-mi-perfil {
         display: block !important;
         visibility: visible;
         position: absolute;
@@ -306,7 +306,7 @@ footer {
         font-size: 1.25rem;
     }
 
-    .navbar.nav-active #mi-perfil {
+    .nav-active #mi-perfil {
         display: block !important;
         position: static;
         margin: 10px 40px 10px auto;
@@ -315,7 +315,6 @@ footer {
         background-color: var(--accent-color);
         border-radius: 50%;
     }
-
 
 
     .texto-nav {
@@ -398,7 +397,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         left: auto;
     }
 
-    .navbar.nav-active .busqueda {
+    .nav-active .busqueda {
         display: flex !important;
         position: static;
         width: 100%;
@@ -406,7 +405,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 20px 0px 10px 100px;
     }
 
-    .navbar.nav-active #texto-mi-perfil {
+    .nav-active #texto-mi-perfil {
         display: block !important;
         visibility: visible;
         position: absolute;
@@ -419,7 +418,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         font-size: 1.25rem;
     }
 
-    .navbar.nav-active #mi-perfil {
+    .nav-active #mi-perfil {
         display: block !important;
         position: static;
         margin: 10px 40px 10px auto;
@@ -507,7 +506,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         left: auto;
     }
 
-    .navbar.nav-active .busqueda {
+    .nav-active .busqueda {
         display: flex !important;
         position: static;
         width: 100%;
@@ -515,7 +514,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 20px 0px 10px 100px;
     }
 
-    .navbar.nav-active #texto-mi-perfil {
+    .nav-active #texto-mi-perfil {
         display: block !important;
         visibility: visible;
         position: absolute;
@@ -528,7 +527,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         font-size: 1.25rem;
     }
 
-    .navbar.nav-active #mi-perfil {
+    .nav-active #mi-perfil {
         display: block !important;
         position: static;
         margin: 10px 40px 10px auto;
@@ -604,7 +603,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         left: auto;
     }
 
-    .navbar.nav-active .busqueda {
+    .nav-active .busqueda {
         display: flex !important;
         position: static;
         width: 100%;
@@ -612,7 +611,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 20px 0px 10px 50%;
     }
 
-    .navbar.nav-active #texto-mi-perfil {
+    .nav-active #texto-mi-perfil {
         display: block !important;
         visibility: visible;
         position: absolute;
@@ -625,7 +624,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         font-size: 1.25rem;
     }
 
-    .navbar.nav-active #mi-perfil {
+    .nav-active #mi-perfil {
         display: block !important;
         position: static;
         margin: 10px 40px 10px auto;
@@ -708,7 +707,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         left: auto;
     }
 
-    .navbar.nav-active .busqueda {
+    .nav-active .busqueda {
         display: flex !important;
         position: static;
         width: 100%;
@@ -716,7 +715,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         padding: 20px 0px 10px 50%;
     }
 
-    .navbar.nav-active #texto-mi-perfil {
+    .nav-active #texto-mi-perfil {
         display: block !important;
         visibility: visible;
         position: absolute;
@@ -729,7 +728,7 @@ se solapen y me cambien la estructura tuve que poner estas condiciones*/
         font-size: 1.25rem;
     }
 
-    .navbar.nav-active #mi-perfil {
+    .nav-active #mi-perfil {
         display: block !important;
         position: static;
         margin: 10px 40px 10px auto;

@@ -125,6 +125,7 @@ function rellenarDatos() {
 
     if (menuHamburguesa) {
         menuHamburguesa.addEventListener('click', () => {
+            console.log("Caso 3 - Función flecha (Menú Hamburguesa):", this); // tercer console.log
             navbar.classList.toggle('nav-active');
         });
     }

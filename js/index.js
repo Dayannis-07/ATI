@@ -11,6 +11,8 @@ function cargarIdioma(lang, callback) {
     document.head.appendChild(script);
 }
 
+console.log("Caso 1 - Ámbito global:", this); // primer console.log
+
 function index() {
     document.getElementById('semester').innerText = config.semester;
     document.getElementById('copyRight').innerText = config.copyRight;
@@ -96,6 +98,9 @@ function index() {
 
     // event listener
     contenedor.addEventListener('click', function (event) {
+
+        console.log("Caso 2 - Event Listener (Función normal):", this); // segundo console.log
+
         const tarjeta = event.target.closest('.enlace');
 
         if (tarjeta) {
